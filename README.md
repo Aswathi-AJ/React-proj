@@ -1,159 +1,37 @@
-# React + TypeScript + Vite
+# 📝 Todo App
 
-This template provides a minimal setup to get **React** working in **Vite** with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) — uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh.
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) — uses [SWC](https://swc.rs/) for Fast Refresh.
+This is a **simple Todo App** built with **React** and **Vite**.  
+It allows users to **add tasks** and see them instantly. This project is my **first step in learning React** and understanding how to work with components and state.  
 
 ---
 
-## 🚀 Getting Started
+## ✨ Features
 
-1. **Clone this repository:**
-
-   ```bash
-   git clone <your-repo-url>
-   cd react-proj
-   ```
-
-2. **Install dependencies:**
-
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server:**
-
-   ```bash
-   npm run dev
-   ```
-
-4. **Build for production:**
-
-   ```bash
-   npm run build
-   ```
-
-5. **Preview production build:**
-
-   ```bash
-   npm run preview
-   ```
+- Add new tasks  
+- Simple and minimal interface  
+- Fast and reactive updates using React  
 
 ---
 
-## ⚙️ React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is **not enabled** in this template because it can affect development and build performance.
-To enable it, follow the [official documentation](https://react.dev/learn/react-compiler/installation).
-
----
-
-## 🧹 Expanding the ESLint Configuration
-
-If you are developing a **production application**, enable **type-aware lint rules** for better type checking.
-
-### Example ESLint Configuration
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Replace tseslint.configs.recommended with one of these
-      tseslint.configs.recommendedTypeChecked,
-
-      // OR for stricter linting
-      // tseslint.configs.strictTypeChecked,
-
-      // Optional stylistic rules
-      // tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-    },
-  },
-])
-```
-
-> 💡 **Tip:** Make sure your `parserOptions.project` points to your valid `tsconfig` files to enable type-aware linting.
+- **React** – for building the user interface  
+- **Vite** – for fast development setup  
+- **CSS** – for basic styling  
 
 ---
 
-## 🧩 Adding React-Specific Lint Rules
+## 💡 Learning Points
 
-You can install `eslint-plugin-react-x` and `eslint-plugin-react-dom` to add more React-focused lint rules.
-
-### Example:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // React-specific lint configurations
-      reactX.configs['recommended-typescript'],
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-    },
-  },
-])
-```
-
-Install both plugins:
-
-```bash
-npm install eslint-plugin-react-x eslint-plugin-react-dom --save-dev
-```
+- Understanding **React components**  
+- Managing **state** with `useState`  
+- Handling **user input** and dynamic rendering  
+- Setting up a project using **Vite**  
 
 ---
 
-## 📜 Scripts
+## 🚀 Future Improvements
 
-Commonly used scripts in your `package.json`:
-
-```json
-{
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint . --ext .ts,.tsx,.js,.jsx"
-  }
-}
-```
-
----
-
-## 📚 Resources
-
-* [Vite Documentation](https://vite.dev/guide/)
-* [React Docs](https://react.dev/)
-* [TypeScript Docs](https://www.typescriptlang.org/docs/)
-* [ESLint Docs](https://eslint.org/docs/latest/)
-
----
-
-## 🪪 License
-
-This project is licensed under the **MIT License**.
+- Delete and edit tasks  
+- Mark tasks as completed  
+- Save tasks in local storage  
