@@ -1,37 +1,29 @@
 # 📝 Todo App
 
-This is a **simple Todo App** built with **React** and **Vite**.  
-It allows users to **add tasks** and see them instantly. This project is my **first step in learning React** and understanding how to work with components and state.  
+This is a **simple Todo App** built with **React + TypeScript + Vite + Tailwind CSS**.  
+It allows users to **add tasks** and see them instantly. This is my **first project learning React and TypeScript**.
 
 ---
 
 ## ✨ Features
 
-- Add new tasks  
-- Simple and minimal interface  
-- Fast and reactive updates using React  
+- Add new tasks
+- Minimal and fast interface
+- Styled with Tailwind CSS
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-- **React** – for building the user interface  
-- **Vite** – for fast development setup  
-- **CSS** – for basic styling  
+- **React** + **TypeScript** – Component-based UI & type safety
+- **Vite** – Fast development and build
+- **Tailwind CSS** – Styling
 
 ---
 
 ## 💡 Learning Points
 
-- Understanding **React components**  
-- Managing **state** with `useState`  
-- Handling **user input** and dynamic rendering  
-- Setting up a project using **Vite**  
-
----
-
-## 🚀 Future Improvements
-
-- Delete and edit tasks  
-- Mark tasks as completed  
-- Save tasks in local storage  
+- React components and JSX
+- State management with `useState`
+- Handling user input dynamically
+- Project setup with Vite + TypeScript + Tailwind
